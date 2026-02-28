@@ -3,49 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jamela - Live Test</title>
+    <title>Jamela - Big & Bold</title>
     <style>
-        /* পুরো পেজের জন্য স্টাইল */
         body {
             margin: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #6A7E3F; /* আপনার দেওয়া অলিভ গ্রিন */
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            overflow: hidden; /* স্ক্রলবার বন্ধ রাখার জন্য */
+            background-color: #6A7E3F;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            overflow: hidden;
         }
 
-        /* মেইন টাইটেল স্টাইল */
         h1 {
-            font-weight: 300;
-            letter-spacing: 3px;
             margin: 0;
+            /* সাইজ অনেক বাড়ানো হয়েছে */
+            font-size: 80px; 
+            font-weight: 700; /* একটু মোটা করা হয়েছে */
+            letter-spacing: -2px; /* লেটার স্পেসিং কমিয়ে মডার্ন লুক দেওয়া হয়েছে */
+            text-transform: uppercase; /* সব বড় হাতের অক্ষর */
         }
 
-        /* লিঙ্কের স্টাইল */
         h1 a {
             text-decoration: none;
-            color: #F4C430;        /* আপনার দেওয়া গোল্ডেন কালার */
-            transition: all 0.4s ease; /* একটু স্মুথ ট্রানজিশন */
-            border-bottom: 2px solid transparent;
-            padding-bottom: 8px;
+            color: #FEFBEA;
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             display: inline-block;
         }
 
-        /* মাউস হোভার করলে যা হবে */
         h1 a:hover {
-            color: #FEFBEA;        /* হোভার করলে ক্রিম কালার হবে (কালো নয়) */
-            border-bottom: 2px solid #FEFBEA; 
-            transform: translateY(-3px); /* হালকা একটু উপরে উঠবে, দেখতে কুল লাগবে */
-            text-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+            color: #F4C430;
+            transform: scale(1.1); /* হোভার করলে লেখাটা একটু বড় হয়ে আপনার দিকে আসবে */
         }
 
-        /* মোবাইল স্ক্রিনের জন্য ছোট এডজাস্টমেন্ট */
+        /* মোবাইলে যাতে স্ক্রিনের বাইরে চলে না যায় তার জন্য */
         @media (max-width: 600px) {
             h1 {
-                font-size: 24px;
+                font-size: 40px;
+                letter-spacing: 1px;
             }
         }
     </style>
