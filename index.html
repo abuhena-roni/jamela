@@ -3,43 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jamela</title>
+    <title>Jamela - Live Test</title>
     <style>
+        /* পুরো পেজের জন্য স্টাইল */
         body {
             margin: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #f8f9fa;
-            font-family: 'Segoe UI', sans-serif;
-            color: #333;
+            background-color: #6A7E3F; /* আপনার দেওয়া অলিভ গ্রিন */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow: hidden; /* স্ক্রলবার বন্ধ রাখার জন্য */
         }
 
+        /* মেইন টাইটেল স্টাইল */
         h1 {
             font-weight: 300;
-            letter-spacing: 2px;
+            letter-spacing: 3px;
+            margin: 0;
         }
 
-        /* Minimal Link Style */
+        /* লিঙ্কের স্টাইল */
         h1 a {
-            text-decoration: none; /* Underline remove korar jonno */
-            color: inherit;        /* H1 er color e thakbe */
-            transition: 0.3s;      /* Smooth effect-er jonno */
-            border-bottom: 1px solid transparent;
-            padding-bottom: 5px;
+            text-decoration: none;
+            color: #F4C430;        /* আপনার দেওয়া গোল্ডেন কালার */
+            transition: all 0.4s ease; /* একটু স্মুথ ট্রানজিশন */
+            border-bottom: 2px solid transparent;
+            padding-bottom: 8px;
+            display: inline-block;
         }
 
-        /* Hover korle halka effect */
+        /* মাউস হোভার করলে যা হবে */
         h1 a:hover {
-            color: #000;
-            border-bottom: 1px solid #333;
+            color: #FEFBEA;        /* হোভার করলে ক্রিম কালার হবে (কালো নয়) */
+            border-bottom: 2px solid #FEFBEA; 
+            transform: translateY(-3px); /* হালকা একটু উপরে উঠবে, দেখতে কুল লাগবে */
+            text-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+        }
+
+        /* মোবাইল স্ক্রিনের জন্য ছোট এডজাস্টমেন্ট */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 24px;
+            }
         }
     </style>
 </head>
 <body>
+
     <h1>
-        <a href="https://gemini.google.com/share/4344a47c73bf">Jamela 01</a>
+        <a href="https://gemini.google.com/share/4344a47c73bf" target="_blank">Jamela 01</a>
     </h1>
+
 </body>
 </html>
